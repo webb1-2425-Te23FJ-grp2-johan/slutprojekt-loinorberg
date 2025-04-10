@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    border: dotted;
+    outline:dotted
 }
 
 img {
@@ -11,21 +11,23 @@ img {
 body {
     display: flex;
     justify-content: center;
-    background-color: darkred;
+    background-color: #811E3A
+    ;
 }
 
 .wrapper {
-    background-color: red;
-    width: 600px;
+    background-color: #9e3150;
+    width: 300px;
     height: 100vh;
+    /* margin: 0 50px 0 50px; */
 }
 
 .meny {
     position: fixed;
     left: 0;
-    width: 100px;
+    width: 50px;
     height: 100vh;
-    background-color: #f0f0f0;
+    background-color: #f4f4f4;
 }
 
 .meny:hover {
@@ -35,12 +37,19 @@ body {
 
 .meny ul {
     list-style: none;
-    padding: 0;
-    margin: 0;
+    padding:0;
+    margin:0;
 }
 
-.meny li {
-    padding: 10px;
+.meny li{
+    padding: 20px 0;
+
+}
+
+.meny li svg{
+    max-height: 50px;
+    width: 50px;
+    margin: 7.5px 0 ;
 }
 
 .meny a {
@@ -51,27 +60,118 @@ body {
 .header {
     display: flex;
     justify-content: space-between;
+    max-height: 50px;
+}
+
+.mitten{
+    display: flex;
+    align-items: center;
 }
 
 h1 {
-    font-size: 4rem;
+    font-size: 2rem;
+    height: 30px;
+    margin: 0;
+    padding: 0;
 }
 
 
-.tidigare{
-    display: flex;
-    justify-content: space-evenly;
+.tidigare {
+    display: grid;
+ grid-template-areas:
+ "nr24"
+ "nr23" 
+ "nr22"
+ "nr21"
+ ;
+}
+
+.nr2024 {
+    grid-area: nr24;
+}
+
+.nr2023 {
+    grid-area: nr23;
+}
+
+.nr2022 {
+    grid-area: nr22;
+}
+
+.nr2023 {
+    grid-area: nr23;
 }
 
 
 
-@media screen and (min-width:600px) {}
+@media screen and (min-width:600px) {
+    .wrapper {
+        width: 500px;
+    }
+    .tidigare {
+        display: grid;
+     grid-template-areas:
+     "nr24 nr23"
+     "nr22 nr21" 
+     ;
+    }
+    .header {
+        display: flex;
+        justify-content: space-between;
+        max-height: 70px;
+    }
 
-@media screen and (min-width:900px) {}
+    h1 {
+        font-size: 4rem;
+        height: 70px;
+    }
+}
+
+@media screen and (min-width:900px) {
+
+    .wrapper {
+        width: 800px;
+    }
+
+    .tidigare {
+        display: grid;
+     grid-template-areas:
+     "nr24 nr23 nr22 nr21"
+     ;
+    }
+    .header {
+        display: flex;
+        justify-content: space-between;
+        max-height: 100px;
+    }
+
+    h1 {
+        font-size: 6rem;
+        height: 100px;
+    }
+}
 
 @media screen and (min-width:1200px) {
     .wrapper {
-        width: 1200px;
+        width: 1100px;
+    }
+    
+    .tidigare {
+        display: grid;
+     grid-template-areas:
+     "nr24 nr23 nr22 nr21"
+     ;
+    }
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        max-height: 140px;
+    }
+
+    h1 {
+        font-size: 8rem;
+        height: 140px;
     }
 
 
