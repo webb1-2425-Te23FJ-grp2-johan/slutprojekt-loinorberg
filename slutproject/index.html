@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="cool.css">
+    <link rel="stylesheet" href="simple-lightbox.min.css">
+
 </head>
 
 <body>
@@ -27,7 +29,7 @@
                         </svg></div>
                     <div class="logtext">Medlemmar</div>
                 </a></li>
-            <li><a href="!!!!!!!!!!tilll en datum sida">
+            <li><a href="datum/datum.html">
                     <div><svg xmlns="http://www.w3.org/2000/svg" height="35px" viewBox="0 -960 960 960" width="35px"
                             fill="#1f1f1f">
                             <path
@@ -309,46 +311,54 @@
                 </a>
             </div>
         </aside>
-        <div class="frammsida">
+        <div class="frammsida gallery">
             <h2 class="minirub1">Årest ugåva</h2>
-            <div class="A2025">
-                <picture>
-                    <source media="(max-width: 600px)" srcset="bilder/2025-280.webp" />
-                    <source media="(max-width: 900px)" srcset="bilder/2025-440.webp" />
-                    <source media="(max-width: 1200px)" srcset="bilder/2025-600.webp" />
-                    <img src="bilder/2025-800.webp" alt="">
-                </picture>
-            </div>
+            <a class="A2025" href="bilder/2025-600.webp">
+                    <picture>
+                        <source media="(max-width: 600px)" srcset="bilder/2025-280.webp" />
+                        <source media="(max-width: 900px)" srcset="bilder/2025-440.webp" />
+                        <source media="(max-width: 1200px)" srcset="bilder/2025-600.webp" />
+                        <img src="bilder/2025-800.webp" alt="">
+                    </picture>
+            </a>
             <h2 class="minirub2"></h2>
             <div class="tidigare">
-                <article class="nr2024">
-                    <picture>
-                        <source media="(max-width: 900px)" srcset="bilder/2021-200ny.webp" />
-                        <source media="(max-width: 1200px)" srcset="bilder/2021-200ny.webp" />
-                        <img src="bilder/2021-240ny.webp" alt="">
-                    </picture>
-                </article>
-                <article class="nr2023">
-                    <picture>
-                        <source media="(max-width: 900px)" srcset="bilder/2023-200.webp" />
-                        <source media="(max-width: 1200px)" srcset="bilder/2023-200.webp" />
-                        <img src="bilder/2023-240.webp" alt="">
-                    </picture>
-                </article>
-                <article class="nr2022">
-                    <picture>
-                        <source media="(max-width: 900px)" srcset="bilder/2021-200ny.webp" />
-                        <source media="(max-width: 1200px)" srcset="bilder/2021-200ny.webp" />
-                        <img src="bilder/2021-240ny.webp" alt="">
-                    </picture>
-                </article>
-                <article class="nr2021">
-                    <picture>
-                        <source media="(max-width: 900px)" srcset="bilder/2020-200.webp" />
-                        <source media="(max-width: 1200px)" srcset="bilder/2020-200.webp" />
-                        <img src="bilder/2020-240.webp" alt="">
-                    </picture>
-                </article>
+                <a class="nr2024" href="bilder/2021-200ny.webp">
+                    <article>
+                        <picture>
+                            <source media="(max-width: 900px)" srcset="bilder/2021-200ny.webp" />
+                            <source media="(max-width: 1200px)" srcset="bilder/2021-200ny.webp" />
+                            <img src="bilder/2021-240ny.webp" alt="">
+                        </picture>
+                    </article>
+                </a>
+                <a class="nr2023" href="bilder/2023-200.webp">
+                    <article>
+                        <picture>
+                            <source media="(max-width: 900px)" srcset="bilder/2023-200.webp" />
+                            <source media="(max-width: 1200px)" srcset="bilder/2023-200.webp" />
+                            <img src="bilder/2023-240.webp" alt="">
+                        </picture>
+                    </article>
+                </a>
+                <a class="nr2022" href="bilder/2021-200ny.webp">
+                    <article>
+                        <picture>
+                            <source media="(max-width: 900px)" srcset="bilder/2021-200ny.webp" />
+                            <source media="(max-width: 1200px)" srcset="bilder/2021-200ny.webp" />
+                            <img src="bilder/2021-240ny.webp" alt="">
+                        </picture>
+                    </article>
+                </a>
+                <a class="nr2021" href="bilder/2020-200.webp">
+                    <article>
+                        <picture>
+                            <source media="(max-width: 900px)" srcset="bilder/2020-200.webp" />
+                            <source media="(max-width: 1200px)" srcset="bilder/2020-200.webp" />
+                            <img src="bilder/2020-240.webp" alt="">
+                        </picture>
+                    </article>
+                </a>
             </div>
         </div>
         <div class="botten">
@@ -360,6 +370,8 @@
             </div>
         </div>
     </div>
+    <script src="simple-lightbox.min.js"></script>
+    <script>let lightbox = new SimpleLightbox('.gallery a', { /* options */ });</script>
 </body>
 
 </html>

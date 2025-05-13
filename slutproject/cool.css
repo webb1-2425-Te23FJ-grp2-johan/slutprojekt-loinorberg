@@ -129,6 +129,11 @@ justify-content: center;
  ;
 }
 
+.frammsida a{
+    display: block;
+}
+
+
 .nr2024 {
     grid-area: nr24;
 
